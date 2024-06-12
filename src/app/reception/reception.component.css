@@ -1,0 +1,94 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* Styles pour la page entière */
+body, html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Roboto', sans-serif; /* Police moderne */
+  background: linear-gradient(135deg, #f06, #f79); /* Dégradé de fond moderne */
+}
+
+/* Conteneur principal pour centrer le contenu */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Styles pour la section de bienvenue */
+.welcome-message {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px 60px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée pour un effet moderne */
+  text-align: center;
+  max-width: 800px;
+  animation: fadeInUp 1s ease-in-out; /* Animation d'apparition */
+  backdrop-filter: blur(10px); /* Flou d'arrière-plan pour un effet élégant */
+  color: #333; /* Couleur du texte */
+}
+
+/* En-tête avec photo de l'utilisateur et titre */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.user-photo {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 20px;
+  border-radius: 50%;
+  border: 3px solid #fff; /* Bordure blanche autour de la photo */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3); /* Ombre autour de la photo */
+  object-fit: cover; /* S'assure que l'image couvre tout le conteneur */
+}
+
+.welcome-message h1 {
+  font-family: 'Playfair Display', serif; /* Police élégante pour le titre */
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.welcome-message p {
+  font-size: 18px;
+  color: #34495e;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Séparateur personnalisé */
+.separator {
+  width: 60%;
+  height: 2px;
+  background: linear-gradient(to right, rgb(36, 7, 124), rgb(119, 214, 255)); /* Dégradé pour le séparateur */
+  margin: 20px auto;
+}
+
+/* Animation de fadeInUp */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.avatar-img {
+  width: 100px; /* Largeur de l'image */
+  height: 100px; /* Hauteur de l'image */
+}

@@ -1,0 +1,35 @@
+<div class="accordion" id="accordionExample">
+  <div class="card" *ngFor="let menu of menuProperties">
+    <div class="card-header" id="menu{{menu.id}}">
+      <h2 class="mb-0">
+        <!-- Ajouter un lien uniquement pour le menu "Reception" -->
+        <a *ngIf="menu.titre === 'Reception'" href="{{menu.url}}">
+          <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" 
+          [attr.data-target]="'#collapse' + menu.id" aria-expanded="true" aria-controls="collapseOne">
+            <i class="{{menu.icon}}"></i>&nbsp;
+            {{menu.titre}}
+          </button>
+        </a>
+        <!-- Pour les autres menus, ne pas ajouter de lien -->
+        <button *ngIf="menu.titre !== 'Reception'" class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" 
+        [attr.data-target]="'#collapse' + menu.id" aria-expanded="true" aria-controls="collapseOne">
+          <i class="{{menu.icon}}"></i>&nbsp;
+          {{menu.titre}}
+        </button>
+      </h2>
+    </div>
+      <div id="collapse{{menu.id}}" class="collapse " [attr.aria-labelledby]="'menu' + menu.id"
+      data-parent="#accordionExample" >
+        <div class="card" >
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let sousMenu of menu.sousMenu">
+                <a href="javascripts:void(0);" (click)="navidate(sousMenu.url)">
+                    <i class="{{sousMenu.icon}}"></i>&nbsp;
+                    <span [ngClass]="{'small-title': sousMenu.titre === 'purchase dachboard'}">{{ sousMenu.titre }}</span>
+                </a>
+            </li>
+            </ul>
+          </div>
+      </div>
+    </div>
+</div>

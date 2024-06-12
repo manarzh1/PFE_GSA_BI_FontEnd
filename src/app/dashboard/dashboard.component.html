@@ -1,0 +1,78 @@
+<div class="main-container">
+    <div class="row min-height-700  no-flex-wrap">
+        <div class="card  col-md-2 mr-2">
+            <div class="col pl-0 pr-0">
+                <div class="logo-card mt-3 mb-2 border-none ">
+                    <img src="assets/image/logo2.png" alt="Logo" class="img-fluid" style="max-width:180px; margin-top: -10px; margin-left: 20px;">
+                </div>
+
+                <div class="user">
+                    <img [src]="user.profileImageUrl" class="rounded-circle" alt="User Image">
+                    <h4 class="name">{{ user.role }}</h4>
+                    <p class="mail">{{ user.email }}</p>
+                </div>
+
+                <div>
+                    <app-menu></app-menu>
+                </div>
+                
+                 <!-- Bouton de déconnexion avec l'icône de déconnexion -->
+                <button (click)="onLogOut()" class="logout-button" style="max-width:180px; margin-top: 70px; margin-left: 45px;">
+                 <i class="fas fa-sign-out-alt"></i> Logout
+                </button>
+            </div>
+        </div>
+        <div class="card  col-md-10 pl-0 pl-0 backgroung-grey border-none d-flex justify-content-between ">
+          
+            <div class="card mb-2" style="min-height: 650px;">
+                <router-outlet></router-outlet>
+            </div>
+            <div class="card min-height-80">
+                <div class="footer-container" style="padding: 10px; background-color: #ffffff;">
+                    <div class="row">
+                        <div class="col-md-3 left-footer text-center">
+                            <div class="logo-footer mb-3">
+                                <img src="assets/image/logo_arab_soft-removebg-preview.png" alt="Arabsoft Logo" class="img-fluid footer-logo">
+                            </div>
+                        </div>
+                        <div class="col-md-1 footer-separator"></div> <!-- Séparation -->
+                        <div class="col-md-3">
+                            <h6 style="font-size: 12px;">NOS LOGICIELS</h6>
+                            <ul class="list-unstyled" style="font-size: 11px;">
+                                <li>AJIR</li>
+                                <li>ARZAK</li>
+                                <li>MERKAZIA</li>
+                                <li>XLIA</li>
+                                <li>JIBAYA</li>
+                                <li>AMIN</li>
+                                <li>HAYET</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-1 footer-separator"></div> <!-- Séparation -->
+                        <div class="col-md-3">
+                            <h5 style="font-size: 12px;">CONTACTEZ-NOUS</h5>
+                            <address style="font-size: 11px;">
+                                Rue 8368 -bloc A- Espace El Aziz, lot Ennassim - Montplaisir- 1073 Tunis TUNISIE<br>
+                                <strong>Tél :</strong> +216.71.95.12.48<br>
+                                <strong>Fax :</strong> +216.71.95.10.44<br>
+                                <strong>Email :</strong> <a href="mailto:arabsoft@arabsoft.com.tn">arabsoft&#64;arabsoft.com.tn</a>, 
+                                <a href="mailto:marketing@arabsoft.com.tn">marketing&#64;arabsoft.com.tn</a>
+                            </address>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-md-6 text-left">
+                            <p class="copyright" style="font-size: 10px;">© 2019 ARABSOFT. Tous droits réservés</p>
+                        </div>
+                        <div class="col-md-6 text-right right-footer">
+                            <p class="designed" style="font-size: 10px;">Designed & Developed by Web-graphique</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+           </div>
+        </div>
+    </div>
+
+

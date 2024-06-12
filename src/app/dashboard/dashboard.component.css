@@ -1,0 +1,161 @@
+.main-container{
+    margin: 50px;
+}
+.min-height-700{
+    min-height: 700px;
+}
+.no-flex-wrap{
+    flex-wrap: inherit !important;
+}
+
+
+
+
+
+/* Style pour le conteneur de logo */
+.logo-container {
+    text-align: center;
+}
+
+.logo-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour la section utilisateur */
+.user {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.user img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #007bff; /* Ajout d'un bord bleu autour de l'image */
+    padding: 5px;
+    background-color: #fff; /* Fond blanc autour de l'image */
+}
+
+.user .name {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.user .mail {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 0;
+}
+
+/* Pour un effet de transition sur l'image au survol */
+.user img:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Espacement et bordure pour les autres éléments */
+.mt-3 {
+    margin-top: 1rem;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+
+/* dashboard.component.css */
+.logout-button {
+    background-color: #438cdb; /* Couleur de fond bleue */
+    color: #ffffff; /* Couleur du texte blanc */
+    border: none; /* Supprimer la bordure */
+    padding: 10px 20px; /* Ajouter un espace autour du texte */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Curseur de souris lors du survol */
+    border-radius: 5px; /* Coins arrondis */
+  }
+  
+  /* Style pour l'icône de déconnexion */
+  .logout-button i {
+    margin-right: 5px; /* Espacement entre l'icône et le texte */
+  }
+  
+  /* Styles pour centrer et uniformiser les éléments */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Assurez-vous que le conteneur prend toute la hauteur de la page */
+}
+
+.card {
+    width: 100%; /* Assurez-vous que les cartes prennent toute la largeur disponible */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem; /* Taille de la police uniforme pour la barre de navigation */
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.25rem; /* Taille des icônes */
+}
+
+.table {
+    font-size: 1rem; /* Taille de la police uniforme pour la table */
+}
+
+.table th, .table td {
+    padding: 0.75rem; /* Espace uniforme entre les cellules */
+}
+
+.table img {
+    height: 40px; /* Taille des images */
+    width: 40px;
+}
+
+
+
+/* Réduire la taille du texte dans le footer */
+.footer-container {
+    font-size: 14px; /* Modifiez cette valeur selon vos besoins */
+}
+
+/* Ajouter une séparation entre les deux sections du footer */
+.footer-separator {
+    border-right: 1px solid #ccc; /* Couleur de la séparation */
+}
+
+/* Appliquer le style à la partie gauche du footer */
+.left-footer {
+    padding-right: 20px; /* Espacement à droite pour la séparation */
+}
+
+/* Appliquer le style à la partie droite du footer */
+.right-footer {
+    padding-left: 20px; /* Espacement à gauche pour la séparation */
+}
+
+/* Appliquer le style à la mention de droits d'auteur */
+.copyright {
+    margin-bottom: 5px; /* Espacement vers le haut */
+}
+
+/* Appliquer le style à la mention de développement */
+.designed {
+    margin-top: 5px; /* Espacement vers le bas */
+}
+.footer-logo {
+    width: 300px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 20%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.footer-logo:hover {
+    transform: scale(1.1);
+}
+

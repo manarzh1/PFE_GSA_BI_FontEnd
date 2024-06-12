@@ -1,0 +1,78 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css';
+@import 'https://use.fontawesome.com/releases/v5.6.3/css/all.css';
+@import "../node_modules/angular-notifier/styles.css";
+
+
+td{
+    cursor: pointer;
+}
+.move-right{
+    position:absolute;
+    right: 0;
+}
+
+.btn-file {
+ position: relative;
+ overflow: hidden;
+}
+
+.btn-file input[type=file]{
+    position: absolute;
+    top:0;
+    right:0;
+    min-width: 100%;
+    min-height: 100%;
+    font-size: 100px;
+    text-align: right;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    outline: none;
+    background: white;
+    cursor: inherit;
+    display: block;
+}
+
+body{
+    background-color: #eff2f5 !important;
+}
+
+.backgroung-grey{
+    background-color: #eff2f5 !important;
+}
+
+.border-none{
+    border: none !important;
+}
+
+.min-height-80{
+    min-height: 80px;
+}
+/* styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  /* styles.css */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  app-root {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  

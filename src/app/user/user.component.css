@@ -1,0 +1,148 @@
+.custom-container {
+    max-width: 60%; /* Ajustez cette valeur selon vos besoins */
+    margin: 0 auto; /* Pour centrer horizontalement */
+}
+.tab-content {
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+/* Styles pour l'élément "Settings" */
+.nav-link.ml-3,
+.nav-link.ml-3:hover {
+    color: #419df9 !important; /* Change la couleur du texte en bleu */
+}
+
+.nav-link.ml-3 .fa-cogs {
+    color: #419df9!important; /* Change la couleur de l'icône en bleu */
+}
+
+/* Styles pour l'élément "Welcome, Summer" */
+.nav-link.move-right.mr-3,
+.nav-link.move-right.mr-3:hover {
+    color:#419df9 !important; /* Change la couleur du texte en bleu */
+}
+
+.nav-link.move-right.mr-3 .fa-user {
+    color: #419df9 !important; /* Change la couleur de l'icône en bleu */
+}
+
+#profile {
+    max-width: 800px;
+}
+
+/* Style for the reset password form */
+#reset-password {
+    padding: 20px;
+  }
+  
+  /* Style for the legend */
+  legend {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the form group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the label */
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  /* Style for the input */
+  input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Style for the small text */
+  .small-text {
+    font-size: 0.8em;
+  }
+  
+  /* Style for the button */
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-primary:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Style for the spinner icon */
+  .fa-spinner {
+    margin-right: 5px;
+  }
+/* Style for the reset password form */
+#reset-password {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+    
+  /* Style for the modal dialog */
+.modal-dialog {
+    max-width: 450px; /* Adjust the width as needed */
+  }
+
+  /* Reduce top and bottom padding of modal body */
+.modal-body {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Reduce margins of form groups */
+.form-group {
+  margin-bottom: 10px; /* Adjust as needed */
+}
+
+/* Reduce bottom margin of modal footer */
+.modal-footer {
+  margin-top: 10px; /* Adjust as needed */
+}
+
+
+.tab-pane.fade.offset-md-1 {
+    margin-top: -10px; /* Réduit la marge supérieure */
+    padding: 0; /* Supprime le rembourrage */
+}
+
+
+.limited-text {
+  font-size: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.small-input {
+  font-size: 12px;
+  padding: 2px;
+}
+.small-btn {
+  font-size: 12px;
+  padding: 2px 5px;
+}
+.square-card {
+  width: 570px;
+  height: 570px;
+  overflow: hidden;
+}
+
+.col-12.col-md-3.mb-3 {
+  margin-right: -90px;}
+
